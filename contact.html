@@ -17,7 +17,7 @@
         <div class="container">
 
             <!-- Logo -->
-            <div class="logo">FieldForce</div>
+            <div class="logo"><a href="/"><img src="assets/images/logo.png" alt=""></a></div>
 
             <!-- Menu -->
             <nav class="nav-links" id="navLinks">
@@ -263,6 +263,12 @@
             msg.classList.add("error");
             msg.innerText = text;
         }
+        const Hamburger = document.getElementById("menuToggle");
+        const nav = document.getElementById("navLinks");
+
+        Hamburger.addEventListener("click", () => {
+            nav.classList.toggle("active");
+        });
     </script>
 
 </body>
