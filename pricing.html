@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>fieldforce</title>
+  <title>FieldForce</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/auth.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -67,7 +67,7 @@
       <!-- Starter -->
       <div class="pricing-card">
         <h3>Starter</h3>
-        <h2 class="price" data-month="999" data-year="799">₹999</h2>
+        <h2 class="price" data-month="29.00" data-year="290.00">€29.00</h2>
         <p>For small field teams getting started</p>
 
         <ul>
@@ -77,14 +77,14 @@
           <li>✔ Up to 5 Users</li>
         </ul>
 
-        <button class="btn-outline">Get Started</button>
+        <a href="contact.html" class="btn-outline" style="margin-top: 60px; display: block;">Get Started</a>
       </div>
 
       <!-- Pro -->
       <div class="pricing-card popular">
         <span class="badge">Most Popular</span>
         <h3>Pro</h3>
-        <h2 class="price" data-month="2999" data-year="2499">₹2999</h2>
+        <h2 class="price" data-month="59.00" data-year="590.00">€59.00</h2>
         <p>Best for growing field operations</p>
 
         <ul>
@@ -95,13 +95,13 @@
           <li>✔ Up to 25 Users</li>
         </ul>
 
-        <button class="btn-primary">Get Started</button>
+        <a href="contact.html"  class="btn-primary" style="display: block;">Get Started</a>
       </div>
 
       <!-- Enterprise -->
       <div class="pricing-card">
         <h3>Enterprise</h3>
-        <h2>Custom</h2>
+        <h2 class="price" data-month="99.00" data-year="990.00">€99.00</h2>
         <p>For large teams & enterprises</p>
 
         <ul>
@@ -112,7 +112,7 @@
           <li>✔ Custom Workflows</li>
         </ul>
 
-        <button class="btn-outline">Contact Sales</button>
+        <a href="contact.html" class="btn-outline" style="margin-top: 30px; display: block;">Contact Sales</a>
       </div>
 
     </div>
@@ -191,7 +191,7 @@
         <input type="email" id="email" placeholder="Email Address" required>
         <input type="text" placeholder="Farm Size / Location">
 
-        <p class="error" id="formError"></p>
+        <p class="" id="formError"></p>
 
         <button type="submit">Submit Request</button>
 
@@ -253,7 +253,7 @@
         if (!startTime) startTime = currentTime;
         let progress = Math.min((currentTime - startTime) / duration, 1);
         let value = Math.floor(progress * (end - start) + start);
-        el.innerText = "₹" + value;
+        el.innerText = "€" + value;
 
         if (progress < 1) {
           requestAnimationFrame(animation);
@@ -265,7 +265,7 @@
 
     toggle.addEventListener("change", () => {
       prices.forEach(price => {
-        let current = parseInt(price.innerText.replace("₹", ""));
+        let current = parseInt(price.innerText.replace("€", ""));
         let target = toggle.checked
           ? parseInt(price.dataset.year)
           : parseInt(price.dataset.month);
