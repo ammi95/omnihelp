@@ -62,7 +62,7 @@
 button {
     width: 100%;
     padding: 12px;
-    background: #0F766E;
+    background: #2563EB;
     border: none;
     border-radius: 6px;
     color: white;
@@ -71,7 +71,7 @@ button {
 }
 
 button:hover {
-    background: #0F766E;
+    background: #2563EB;
 }
 
 /* ERROR */
@@ -128,7 +128,7 @@ button:hover {
 }
 
 .signup-text a {
-    color: #14b8a6;
+    color: #2563EB;
     text-decoration: none;
     font-weight: 600;
 }
@@ -141,7 +141,7 @@ button:hover {
 /* BUTTON */
 .demo-btn {
     padding: 12px 22px;
-    background: #0F766E;
+    background: #2563EB;
     color: #000000;
     border: none;
     border-radius: 8px;
@@ -202,7 +202,7 @@ button:hover {
 
 .modal-content button {
     padding: 12px;
-    background: #0F766E;
+    background: #2563EB;
     border: none;
     border-radius: 6px;
     color: white;
@@ -218,7 +218,7 @@ button:hover {
 
 /* SUCCESS */
 .success {
-    color: #0F766E;
+    color: #2563EB;
     font-weight: bold;
 }
 
@@ -331,7 +331,7 @@ button:hover {
 button {
     width: 100%;
     padding: 12px;
-    background: #0F766E;
+    background: #2563EB;
     border: none;
     border-radius: 6px;
     color: white;
@@ -340,7 +340,7 @@ button {
 }
 
 button:hover {
-    background: #0F766E;
+    background: #2563EB;
 }
 
 /* ERROR */
@@ -359,7 +359,7 @@ button:hover {
 }
 
 .login-text a {
-    color: #14b8a6;
+    color: #2563EB;
     text-decoration: none;
     font-size: 14px;
     font-weight: 600;

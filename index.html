@@ -21,14 +21,15 @@
 
       <!-- Menu -->
       <nav class="nav-links" id="navLinks">
-        <a href="/">Home</a>
         <a href="#features">Features</a>
-        <a href="#usecase">Use Cases</a>
+        <a href="solution.html">Solutions</a>
+        <a href="pricing.html">Pricing</a>
+        <!-- <a href="#usecase">Demo</a> -->
         <a href="contact.html">Contact</a>
 
         <div class="mobile-cta">
-          <button class="btn-outline">Login</button>
-          <a href="javascript:void(0)" class="btn-primary" onclick="openModal()">Try Demo</a>
+          <a href="login.html" class="btn-outline">Login</a>
+          <a href="javascript:void(0)" class="btn-primary" onclick="openModal()">Get started</a>
         </div>
       </nav>
 
@@ -47,80 +48,161 @@
   </header>
   <!-- Hero -->
   <section class="hero">
-    <div class="hero-container">
+    <div class="container hero-wrapper">
 
-      <!-- Left Content -->
+      <!-- LEFT CONTENT -->
       <div class="hero-content">
-        <h1>Smart Voice Assistant <br />
-          <span>for Utility Services</span>
+        <h1>
+          AI-powered chatbot resolving <span>70–80%</span>
+          of customer queries automatically
         </h1>
 
         <p>
-          Voice assistant for bill inquiries, meter readings, and customer support — available 24/7.
+          Deliver instant, 24/7 support across web & WhatsApp
+          with intelligent NLP automation.
         </p>
 
         <div class="hero-buttons">
-          <a href="javscript:void(0)" class="btn primary" onclick="openModal()">🎤 Try Voice Demo</a>
-          <a href="contact.html" class="btn secondary">📞 Contact Sales</a>
+          <a href="javacript:void(0)" class="btn secondary" onclick="openModal()">Book a Demo</a>
         </div>
       </div>
 
-      <!-- Right Image -->
-      <div class="hero-image">
-        <img src="assets/images/voice-ui.png" alt="Voice UI">
+      <!-- WhatsApp UI -->
+      <div class="whatsapp-ui">
+        <div class="chat-header">
+          <div class="avatar"></div>
+          <div>
+            <strong>OmniHelp Bot</strong>
+            <span>online</span>
+          </div>
+        </div>
+
+        <div class="chat-body" id="chatBody">
+          <div class="msg user">Hi, where is my order?</div>
+
+          <div class="msg bot typing" id="typingMsg">
+            <span class="dots"></span>
+          </div>
+        </div>
       </div>
 
     </div>
   </section>
 
+  <!-- tursted logos -->
+  <section class="social-proof">
 
+    <!-- Top Text -->
+    <div class="trust-text">
+      <h2>Trusted by <span>500+</span> businesses worldwide</h2>
+    </div>
+
+    <!-- Logo Marquee -->
+    <div class="logo-marquee">
+      <div class="logo-track">
+        <img src="assets/images/google.png" />
+        <img src="assets/images/Amazon logo.png" />
+        <img src="assets/images/microsoft.png" />
+        <img src="assets/images/slack.png" />
+        <img src="assets/images/airbnb.png" />
+
+        <!-- Duplicate for smooth loop -->
+        <img src="assets/images/google.png" />
+        <img src="assets/images/Amazon logo.png" />
+        <img src="assets/images/microsoft.png" />
+        <img src="assets/images/slack.png" />
+        <img src="assets/images/airbnb.png" />
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats">
+      <div class="stat">
+        <h2>80%</h2>
+        <p>Queries Automated</p>
+      </div>
+
+      <div class="stat">
+        <h2>3x</h2>
+        <p>Faster Response</p>
+      </div>
+
+      <div class="stat">
+        <h2>24/7</h2>
+        <p>Availability</p>
+      </div>
+    </div>
+
+  </section>
   <!-- Features -->
-  <section class="features-combo" id="features">
+  <section class="features" id="features">
 
-    <h2>What You Can Do with VoiceServe</h2>
+    <div class="container features-wrapper">
 
-    <div class="combo-container">
+      <!-- LEFT SIDE FEATURES -->
+      <div class="features-list">
 
-      <!-- LEFT: Timeline -->
-      <div class="timeline">
-
-        <div class="step">
-          <span>💳</span>
-          <p>Check Bills Instantly</p>
+        <div class="feature active">
+          <span>🤖</span>
+          <div>
+            <h3>AI Chatbot Automation</h3>
+            <p>Handles FAQs instantly</p>
+          </div>
         </div>
 
-        <div class="step">
-          <span>📅</span>
-          <p>Due Date Reminders</p>
+        <div class="feature">
+          <span>🧠</span>
+          <div>
+            <h3>NLP Understanding</h3>
+            <p>Intent classification & entity extraction</p>
+          </div>
         </div>
 
-        <div class="step">
+        <div class="feature">
+          <span>🔗</span>
+          <div>
+            <h3>CRM Integration</h3>
+            <p>Sync with ticket systems</p>
+          </div>
+        </div>
+
+        <div class="feature">
+          <span>💬</span>
+          <div>
+            <h3>Multi-Channel Support</h3>
+            <p>Website + WhatsApp + Messenger</p>
+          </div>
+        </div>
+
+        <div class="feature">
           <span>📊</span>
-          <p>Submit Meter Readings</p>
+          <div>
+            <h3>Analytics Dashboard</h3>
+            <p>Insights & performance tracking</p>
+          </div>
         </div>
 
-        <div class="step">
-          <span>🚨</span>
-          <p>Outage Updates</p>
+        <div class="feature">
+          <span>🔁</span>
+          <div>
+            <h3>Smart Escalation</h3>
+            <p>Transfer to human agents with context</p>
+          </div>
         </div>
 
       </div>
 
-      <!-- RIGHT: Chat UI -->
-      <div class="chat-ui">
+      <!-- RIGHT SIDE PREVIEW -->
+      <div class="feature-preview">
+        <h2>AI Chatbot Automation</h2>
+        <p>
+          Automatically resolves repetitive queries with high accuracy,
+          reducing support workload and improving response time.
+        </p>
 
-        <div class="msg user">💳 What’s my current bill?</div>
-        <div class="msg bot">Your current bill is ₹1,240</div>
-
-        <div class="msg user">📅 When is my due date?</div>
-        <div class="msg bot">Your due date is 25 March</div>
-
-        <div class="msg user">📊 Submit meter reading</div>
-        <div class="msg bot">Reading recorded successfully</div>
-
-        <div class="msg user">🚨 Any outage updates?</div>
-        <div class="msg bot">No outages in your area</div>
-
+        <div class="preview-box">
+          🤖 Bot replying instantly to customer queries...
+        </div>
       </div>
 
     </div>
@@ -128,179 +210,163 @@
   </section>
 
   <!-- product section -->
-  <section class="experience" id="voice-assistant"> 
+  <section class="multi-channel">
 
-    <div class="exp-container">
+    <div class="container">
 
-      <!-- LEFT: Image + Wave -->
-      <div class="exp-image fade-left">
-        <div class="wave-circle"></div>
-
-        <img src="assets/images/voice-ui.png" alt="Voice UI">
-
-        <!-- Floating Tags -->
-        <div class="tag tag1">🎤 Listening...</div>
-        <div class="tag tag2">📝 Transcribing...</div>
-        <div class="tag tag3">✅ Response Ready</div>
+      <!-- Heading -->
+      <div class="section-header">
+        <h2>Engage customers anywhere they are</h2>
+        <p>Seamlessly connect across all major communication channels</p>
       </div>
 
-      <!-- RIGHT: Content -->
-      <div class="exp-content fade-right">
-        <h2>Seamless Voice Experience</h2>
+      <!-- Chat UI Showcase -->
+      <div class="channels">
 
-        <!-- Typing Text -->
-        <p class="subtitle">
-          <span id="typing-text"></span>
-        </p>
+        <!-- Website Chat -->
+        <div class="channel web">
+          <div class="chat-header">Website Chat</div>
+          <div class="chat-body">
+            <p class="user">Need help with pricing?</p>
+            <p class="bot">Sure! Let me guide you 💡</p>
+          </div>
+        </div>
 
-        <ul class="exp-list">
-          <li>💬 Talk naturally with the system</li>
-          <li>⚡ Real-time transcription</li>
-          <li>📱 Works on mobile & smart speakers</li>
-        </ul>
+        <!-- WhatsApp -->
+        <div class="channel whatsapp">
+          <div class="chat-header">WhatsApp</div>
+          <div class="chat-body">
+            <p class="user">Order status?</p>
+            <p class="bot">Arriving tomorrow 🚚</p>
+          </div>
+        </div>
 
-        <a href="#" class="btn primary">Explore Demo</a>
+        <!-- Messenger -->
+        <div class="channel messenger">
+          <div class="chat-header">Messenger</div>
+          <div class="chat-body">
+            <p class="user">Can I return?</p>
+            <p class="bot">Yes within 7 days ✅</p>
+          </div>
+        </div>
+
       </div>
 
     </div>
 
   </section>
   <!-- How it works -->
-  <section class="flow">
+  <section class="how-it-works">
 
-    <h2>How VoiceServe Works</h2>
+    <div class="hand-container">
 
-    <div class="flow-container">
-
-      <!-- Step 1 -->
-      <div class="flow-step fade-up">
-        <div class="circle">🎤</div>
-        <p>User speaks command</p>
+      <!-- Heading -->
+      <div class="section-header">
+        <h2>How OmniHelp Works</h2>
+        <p>From query to resolution in seconds</p>
       </div>
 
-      <div class="arrow">➝</div>
+      <!-- Steps -->
+      <div class="steps">
 
-      <!-- Step 2 -->
-      <div class="flow-step fade-up">
-        <div class="circle">🧠</div>
-        <p>NLP processes request</p>
-      </div>
+        <div class="step">
+          <div class="icon">👤</div>
+          <h3>User Query</h3>
+          <p>User sends a message</p>
+        </div>
 
-      <div class="arrow">➝</div>
+        <div class="step">
+          <div class="icon">🧠</div>
+          <h3>NLP Processing</h3>
+          <p>Understands intent & context</p>
+        </div>
 
-      <!-- Step 3 -->
-      <div class="flow-step fade-up">
-        <div class="circle">🔗</div>
-        <p>Connects to Billing/CRM</p>
-      </div>
+        <div class="step">
+          <div class="icon">🤖</div>
+          <h3>Bot Response</h3>
+          <p>Answers using knowledge base</p>
+        </div>
 
-      <div class="arrow">➝</div>
+        <div class="step">
+          <div class="icon">🔁</div>
+          <h3>Smart Escalation</h3>
+          <p>Transfers to human if needed</p>
+        </div>
 
-      <!-- Step 4 -->
-      <div class="flow-step fade-up">
-        <div class="circle">🔊</div>
-        <p>Voice response returned</p>
       </div>
 
     </div>
 
   </section>
 
-  <!-- security -->
-  <section class="security" id="security">
+  <!-- handover section -->
+  <section class="handover">
 
-    <div class="security-container">
+    <div class="container handover-wrapper">
 
-      <!-- LEFT: Content -->
-      <div class="security-content fade-left">
-        <h2>Secure & Reliable</h2>
+      <!-- LEFT: CHAT UI -->
+      <div class="handover-chat">
+
+        <div class="chat-box">
+          <p class="bot">I'm not able to resolve this 😔</p>
+          <p class="bot">Connecting you to a human agent...</p>
+
+          <div class="handover-line">🔁 Handover in progress</div>
+
+          <p class="agent">Hi! I’ve reviewed your issue. Let me help you 👍</p>
+        </div>
+
+      </div>
+
+      <!-- RIGHT: CONTENT -->
+      <div class="handover-content">
+
+        <h2>Seamless Handover to Human Agents</h2>
 
         <p class="subtitle">
-          Your data is protected with enterprise-grade security and privacy controls.
+          When AI can’t solve it, humans take over instantly — without breaking the conversation.
         </p>
 
-        <div class="security-points">
-          <div class="point">
-            <span>🔗</span>
-            <p>Secure account linking</p>
-          </div>
+        <ul class="handover-points">
+          <li>✅ Full conversation context shared</li>
+          <li>✅ No repetition for the user</li>
+          <li>✅ Faster and smoother resolution</li>
+        </ul>
 
-          <div class="point">
-            <span>🔐</span>
-            <p>PIN / OTP verification</p>
-          </div>
-
-          <div class="point">
-            <span>🛡️</span>
-            <p>Safe data handling</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- RIGHT: Illustration -->
-      <div class="security-visual fade-right">
-        <div class="shield">
-          🛡️
-          <div class="pulse"></div>
-        </div>
       </div>
 
     </div>
 
   </section>
 
-  <!-- use cases -->
-  <section class="usecases" id="usecase">
+  <!-- architecture -->
+  <section class="architecture">
 
-    <h2>Built for Real Utility Needs</h2>
+    <div class="arch-container">
 
-    <div class="usecase-container">
-
-      <div class="usecase-item">
-        <div class="icon">💡</div>
-        <h3>Billing Queries</h3>
-        <p>Check bills, due dates, and payment status instantly.</p>
+      <!-- Heading -->
+      <div class="section-header">
+        <h2>OmniHelp Architecture</h2>
+        <p>Powerful AI pipeline working behind the scenes</p>
       </div>
 
-      <div class="usecase-item">
-        <div class="icon">📈</div>
-        <h3>Meter Readings</h3>
-        <p>Submit readings quickly using voice input.</p>
-      </div>
+      <!-- Flow Diagram -->
+      <div class="arch-flow">
 
-      <div class="usecase-item">
-        <div class="icon">⚡</div>
-        <h3>Outage Alerts</h3>
-        <p>Get real-time updates on service interruptions.</p>
-      </div>
+        <div class="arch-box">👤<span>User</span></div>
+        <div class="arrow"></div>
 
-    </div>
+        <div class="arch-box">💬<span>Chat Interface</span></div>
+        <div class="arrow"></div>
 
-  </section>
+        <div class="arch-box highlight">🧠<span>NLP Engine</span></div>
+        <div class="arrow"></div>
 
-  <!-- value propostion -->
-  <section class="value">
+        <div class="arch-box">⚙️<span>Backend</span></div>
+        <div class="arrow"></div>
 
-    <div class="value-container fade-up">
+        <div class="arch-box">🗄️<span>CRM / Database</span></div>
 
-      <h2>
-        Reduce Call Center Load <span>by 40%</span>
-      </h2>
-
-      <p class="subtitle">
-        Automate customer interactions with AI-powered voice support and deliver faster, smarter service.
-      </p>
-
-      <!-- Highlights -->
-      <div class="value-points">
-        <div class="point">⚡ 24/7 automated support</div>
-        <div class="point">🚀 Faster customer response</div>
-      </div>
-
-      <!-- CTA -->
-      <div class="value-buttons">
-        <a href="javascript:void(0)" class="btn primary" onclick="openModal()">Start Demo</a>
-        <a href="contact.html" class="btn secondary">Contact Sales</a>
       </div>
 
     </div>
@@ -311,53 +377,52 @@
 
   <!-- Footer -->
   <footer class="footer">
-
     <div class="footer-container">
+      <div class="footer-logo-desc">
+        <div class="logo" style="margin-bottom: 10px;">
+          <img src="assets/images/logo.png" alt="OmniHelp Logo">
+        </div>
+        <p>Your trusted AI-powered chat solution helping businesses resolve queries faster and smarter.</p>
+      </div>
+      <!-- Columns -->
+      <div class="footer-columns">
 
-      <!-- LEFT -->
-      <div class="footer-col">
-        <a href="" class="logo"><img src="assets/images/logo.png" alt=""
-            style="width: 200px; margin-bottom: 20px; border-radius: 10px;"></a>
-        <p>Smart voice assistant for utility providers</p>
+        <div class="footer-column">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <!-- <li><a href="#">Integrations</a></li> -->
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="solution.html">solutions</a></li>
+            <!-- <li><a href="#">Careers</a></li> -->
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Resources</h4>
+          <ul>
+            <!-- <li><a href="#">Blog</a></li> -->
+            <li><a href="contact.html">Help Center</a></li>
+            <li><a href="#">Docs</a></li>
+          </ul>
+        </div>
+
       </div>
 
-      <!-- LINKS -->
-      <div class="footer-col">
-        <h3 style="margin-bottom: 10px;">Links</h3>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#usecase">Use Cases</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
+      <!-- Extras: Social + Email -->
 
-      <!-- PRODUCT -->
-      <div class="footer-col">
-        <h3 style="margin-bottom: 10px;">Product</h3>
-        <ul>
-          <li><a href="#voice-assistant">Voice Assistant</a></li>
-          <!-- <li><a href="#">Integrations</a></li> -->
-          <li><a href="#security">Security</a></li>
-        </ul>
-      </div>
 
-      <!-- CONTACT -->
-      <div class="footer-col">
-        <h3 style="margin-bottom: 10px;">Contact</h3>
-        <ul>
-          <li>Email: support@voiceserve.com</li>
-          <li>Phone: +91 XXXXX XXXXX</li>
-        </ul>
+      <div class="footer-bottom">
+        <p>© 2026 OmniHelp. All rights reserved.</p>
       </div>
-
     </div>
-
-    <!-- Bottom -->
-    <div class="footer-bottom">
-      <p>© 2026 VoiceServe. All rights reserved.</p>
-    </div>
-
   </footer>
 
   <div class="modal" id="demoModal">
@@ -432,65 +497,70 @@
       nav.classList.toggle("active");
     });
 
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
 
-    const text = "Talk naturally with the system and get instant responses powered by AI.";
-    let index = 0;
+        const target = document.querySelector(this.getAttribute("href"));
+        const offset = 100; // header height
 
-    function typeEffect() {
-      if (index < text.length) {
-        document.getElementById("typing-text").innerHTML += text.charAt(index);
-        index++;
-        setTimeout(typeEffect, 30);
-      }
-    }
-    typeEffect();
+        const bodyRect = document.body.getBoundingClientRect().top;
+        const elementRect = target.getBoundingClientRect().top;
+        const elementPosition = elementRect - bodyRect;
+        const offsetPosition = elementPosition - offset;
 
-
-    // 👀 Scroll Reveal
-    const elements = document.querySelectorAll(".fade-left, .fade-right");
-
-    function revealOnScroll() {
-      elements.forEach(el => {
-        const top = el.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
-
-        if (top < windowHeight - 100) {
-          el.classList.add("show");
-        }
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        });
       });
-    }
+    });
 
-    window.addEventListener("scroll", revealOnScroll);
+    setTimeout(() => {
+      const typingMsg = document.getElementById("typingMsg");
 
-    const flowItems = document.querySelectorAll(".fade-up");
+      typingMsg.classList.remove("typing");
+      typingMsg.textContent = "Your order will arrive tomorrow 🚚";
 
-    function revealFlow() {
-      flowItems.forEach(item => {
-        const top = item.getBoundingClientRect().top;
-        const height = window.innerHeight;
+      setTimeout(() => {
+        const chatBody = document.getElementById("chatBody");
 
-        if (top < height - 100) {
-          item.classList.add("show");
-        }
+        const userMsg = document.createElement("div");
+        userMsg.className = "msg user";
+        userMsg.textContent = "Can I return it?";
+
+        const botMsg = document.createElement("div");
+        botMsg.className = "msg bot";
+        botMsg.textContent = "Yes, within 7 days ✅";
+
+        chatBody.appendChild(userMsg);
+        chatBody.appendChild(botMsg);
+
+      }, 2000);
+
+    }, 2000);
+    const features = document.querySelectorAll(".feature");
+    const title = document.querySelector(".feature-preview h2");
+    const desc = document.querySelector(".feature-preview p");
+
+    const data = [
+      "Automatically resolves repetitive queries...",
+      "Understands user intent using NLP models...",
+      "Seamlessly integrates with CRM systems...",
+      "Supports multiple communication channels...",
+      "Provides real-time analytics insights...",
+      "Escalates complex queries to human agents..."
+    ];
+
+    features.forEach((item, index) => {
+      item.addEventListener("click", () => {
+        document.querySelector(".active").classList.remove("active");
+        item.classList.add("active");
+
+        title.textContent = item.querySelector("h3").textContent;
+        desc.textContent = data[index];
       });
-    }
-
-    window.addEventListener("scroll", revealFlow);
-
-    const secItems = document.querySelectorAll(".fade-left, .fade-right");
-
-    function revealSecurity() {
-      secItems.forEach(el => {
-        const top = el.getBoundingClientRect().top;
-        const height = window.innerHeight;
-
-        if (top < height - 100) {
-          el.classList.add("show");
-        }
-      });
-    }
-
-    window.addEventListener("scroll", revealSecurity);
+    });
   </script>
   <!-- <script src="script.js"></script> -->
 </body>
