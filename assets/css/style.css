@@ -1406,6 +1406,24 @@ body {
 }
 
 /* ================= CONTACT SECTION ================= */
+.banner {
+    background: radial-gradient(circle, #2563EB, #000);
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.banner h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
 .contact-container {
     display: flex;
     gap: 40px;
