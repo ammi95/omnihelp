@@ -1625,6 +1625,7 @@ body {
     justify-content: center;
     gap: 30px;
     margin-top: 40px;
+    color: #ffffff;
 }
 
 .card {
@@ -1670,6 +1671,7 @@ body {
     justify-content: center;
     gap: 30px;
     margin-top: 40px;
+    color: #ffffff;
 }
 
 .problem {
