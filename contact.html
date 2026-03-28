@@ -185,7 +185,7 @@
         <form class="demo-form" id="demoForm">
             <input type="text" placeholder="Full Name" required>
             <input type="email" placeholder="Email Address" required>
-            <input type="phone" placeholder="Phone Number" required>
+            <input type="phone" id="phone" maxlength="10" placeholder="Phone Number" required>
 
 
             <textarea placeholder="Your Message"></textarea>
@@ -229,6 +229,9 @@
                 }, 5000);
             });
         })
+        document.getElementById("phone").addEventListener("input", function () {
+            this.value = this.value.replace(/[^0-9]/g, "");
+        });
 
         const contactform = document.getElementById("contactform");
         const msg = document.getElementById("formMsg");
