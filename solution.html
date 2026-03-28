@@ -247,6 +247,10 @@
                 }, 5000);
             });
         })
+
+        document.getElementById("phone").addEventListener("input", function () {
+            this.value = this.value.replace(/[^0-9]/g, "");
+        });
         const Hamburger = document.getElementById("menuToggle");
         const nav = document.getElementById("navLinks");
         Hamburger.addEventListener("click", () => { nav.classList.toggle("active"); });
